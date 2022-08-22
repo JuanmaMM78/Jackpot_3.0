@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Jackpot 2.1</title>
+</head>
+<body>
+   
+    <div class="container" >
+        
+        <div class="botones" >
+            <div class="buttonDobla" >
+                <button id="dobla" class="dobla">DOBLA</button>
+            </div>
+            <h1>J<span class="a">🍒</span>ckp<span class="o" >🥝</span>t</h1>
+            <div class="buttonStart" >
+                <button id="start" class="start">START</button>
+            </div>
+        </div>
+        <div id="jugada">
+                 <ul id="ventJugada" class="look1">
+                    <i id="primFrutRule">🍒</i>
+                    <i id="primFrutRule">🍓</i>
+                    <i id="primFrutRule">🍍</i>
+                    <i id="primFrutRule">🥝</i> 
+                    <i id="primFrutRule">🍉</i>
+                </ul>
+                <ul id="ventJugada" class="look2">
+                    <i id="segunFrutRule">🥝</i>
+                    <i id="segunFrutRule">🍉</i>
+                    <i id="segunFrutRule">🍒</i>
+                    <i id="segunFrutRule">🍍</i>
+                    <i id="segunFrutRule">🍓</i>
+                </ul>
+                <ul id="ventJugada" class="look3">
+                    <i id="terceFrutRule">🍍</i>
+                    <i id="terceFrutRule">🥝</i>
+                    <i id="terceFrutRule">🍓</i>
+                    <i id="terceFrutRule">🍉</i>
+                    <i id="terceFrutRule">🍒</i>
+                </ul>
+                <ul id="ventPremio" class="look4">
+                    <i id="primFrut">🍒</i>
+                    <i id="segunFrut">🍒</i>
+                    <i id="terceFrut">🍒</i>
+                    </ul>
+        </div>     
+        <div class="marcador">
+            <div class="puntuacion">
+                <h3>Tienes</h3>
+                <span id="puntos">15</span>
+                <h3>Monedas 💰</h3>
+            </div>
+            <div class="combinaciones">
+                <h3>Combinaciones Ganadoras</h3>
+                <li>🍒🍒🍒 --  2 Monedas 💰</li>
+                <li>🍓🍓🍓 --  5 Monedas 💰</li>
+                <li>🍍🍍🍍 --  10 Monedas 💰</li>
+                <li>🥝🥝🥝 --  20 Monedas 💰</li>
+                <li>🍉🍉🍉 --  30 Monedas 💰</li>
+            </div>
+        </div>
+        <div class="mensaje" >
+            <h3 id="mensajeBanner"></h3>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

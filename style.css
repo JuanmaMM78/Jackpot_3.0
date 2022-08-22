@@ -1,0 +1,271 @@
+:root {
+    --gris : rgb(150, 151, 144);
+    --gris-oscuro: rgb(59, 60, 72);
+    --blanco : rgb(247, 239, 239);
+    --verde : rgb(11, 196, 11);
+    --rojo : rgb(178, 15, 15);
+    --amarillo : rgb(243, 227, 9);
+    --amarillo-claro : rgb(230, 255, 6);
+}
+body {
+    background-color: var(--gris-oscuro)}
+
+h1 {
+    padding: 20px;
+    font-size: 80px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.a,
+.o {   
+    font-size: 40px;
+    color: red;
+}
+
+.container {
+    position: relative;
+    background-color: var(--gris);
+    width:900px;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+
+#jugada ul {
+    padding: 0;
+   
+}
+
+#ventPremio {
+    display: flex;
+    margin-top: 0;
+}
+
+#primFrut,
+#segunFrut,
+#terceFrut {
+    height: 100px;
+    font-size: 60px;
+    padding: 30px;
+    margin: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    border: 5px solid var(--rojo);
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px;
+}
+
+
+.botones {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+}
+
+.buttonStart {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: start 1s linear infinite;
+    border-radius: 999999px; 
+}
+
+@keyframes start {
+    0% {
+        filter: hue-rotate(1deg);
+    }
+    50% {
+        filter: hue-rotate(60deg);
+    }
+    100% {
+        filter: hue-rotate(10deg);
+    }
+}
+
+.start {
+    width: 100px;
+    height: 100px;
+    border-radius: 999999px;
+    margin-top: 0;
+    background-color: var(--rojo);
+    border: 10px solid black;
+    box-shadow: 10px 10px 30px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.start:hover {
+    cursor: pointer;
+    background-color: var(--verde);
+    transform: scale(1.1);
+    border-radius: 999999px;
+    color: var(--blanco);
+}
+
+.buttonDobla {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: dobla 1s linear infinite;
+    border-radius: 999999px; 
+}
+
+@keyframes dobla {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.dobla {
+    width: 100px;
+    height: 100px;
+    border-radius: 999999px;
+    margin-top: 0;
+    background-color: var(--amarillo);
+    border: 10px solid black;
+    box-shadow: 10px 10px 30px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.dobla:hover {
+    cursor: pointer;
+    background-color: var(--verde);
+    transform: scale(1.1);
+    border-radius: 999999px;
+    color: var(--blanco);
+}
+
+.marcador {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;    
+    padding-bottom: 20px;
+}
+
+.puntuacion {
+    margin-top: 25px;
+    border: 3px solid var(--gris-oscuro);
+    border-radius: 10px;
+    width: 200px;
+}
+
+.puntuacion h3 {
+    font-size: 20px;
+    color: var(--blanco);
+}
+
+.puntuacion span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.combinaciones {
+    margin-top: 25px;
+    border: 3px solid var(--gris-oscuro);
+    border-radius: 10px;
+    width: 200px;
+}
+
+.combinaciones h3 {
+    color: var(--blanco);
+    font-size: 20px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.combinaciones li {
+    list-style: none; 
+}
+
+.banner {
+    display: flex;
+  
+    width: 705px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    margin: auto;
+    border: 3px solid red;
+    background-color: red;
+    color: var(--blanco);
+    border-radius: 20px;
+    font-size: 30px;
+    justify-items: center;
+    animation-name: banner;
+    animation-duration: 5.5s;
+    animation-timing-function: cubic-bezier(0, 1.2, 0, 1);
+    animation-iteration-count: 1;
+    animation-direction: reverse;   
+}
+
+@keyframes banner {
+    0% {top: 100px}
+    5% {top: 100px}
+    50% {top: 100px}
+    75% {top: 100px}
+    100% {top: -100px}
+}
+
+
+#jugada {
+    
+    display: flex;
+    justify-content: center;
+    height: 190px;
+    overflow: hidden;
+}
+
+
+#ventJugada {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    animation: ruleta 0.5s linear infinite reverse;  
+    gap: 100px;
+    
+    
+}
+
+#ventJugada i {
+    display: flex;
+    margin-top: 100px;
+    height: 100px;
+    font-size: 60px;
+    padding: 30px;
+    margin: 20px;
+    margin-bottom: 0;
+    border:5px solid var(--verde);
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px;
+    margin-top: 0px;
+}
+
+@keyframes ruleta {
+    0% {margin-top: -20px;}
+    100%{margin-top: -1020px; display: none;}    
+}
+
+#ventJugada,
+.look1,
+.look2,
+.look3 {
+    display: none;
+}
+
