@@ -155,25 +155,25 @@ function premio(num1,num2,num3,costo){
         
         if (num1 == 0){
             puntos = puntos + (2*costo)
-            monedas = (2*costo);
-            console.log('suma: ',monedas, 'monedas')
+            recompensa = (2*costo);
+            console.log('suma: ',recompensa, 'monedas')
         } else if (num1 == 1){
             puntos = puntos + (5*costo)
-            monedas = (5*costo);
-            console.log('suma: ',monedas, 'monedas')
+            recompensa = (5*costo);
+            console.log('suma: ',recompensa, 'monedas')
         }  else if (num1 == 2){
             puntos = puntos + (10*costo)
-            monedas = (10*costo);
-            console.log('suma: ',monedas, 'monedas')
+            recompensa = (10*costo);
+            console.log('suma: ',recompensa, 'monedas')
         }  else if (num1 == 3){
             puntos = puntos + (20*costo)
-            monedas = (20*costo);
-            console.log('suma: ',monedas, 'monedas')
+            recompensa = (20*costo);
+            console.log('suma: ',recompensa, 'monedas')
         }  else if (num1 == 4){
             puntos = puntos + (30*costo)
-            monedas = (30*costo);
-            console.log('suma: ',monedas, 'monedas')
-        } mensajePremio(monedas);
+            recompensa = (30*costo);
+            console.log('suma: ',recompensa, 'monedas')
+        } mensajePremio(recompensa);
     } refresPuntos(puntos);  
 }
 
@@ -196,13 +196,13 @@ function finjuego(){
 }
 
 /** mensaje Ganas monedas */
-function mensajePremio(monedas) {
+function mensajePremio(recompensa) {
     sonidoGana()
     console.log('aparece banner de ganar');
     document.getElementById('mensajeBanner').classList.add(banner);
-    document.getElementById('mensajeBanner').innerHTML = `ENHORABUENA!!!  HAS GANADO............................    ${monedas} MONEDAS 💰`
+    document.getElementById('mensajeBanner').innerHTML = `ENHORABUENA!!!  HAS GANADO............................    ${recompensa} MONEDAS 💰`
  
-    console.log('Ganas....', monedas , ' monedas')
+    console.log('Ganas....', recompensa , ' monedas')
 }
 
 /** mensaje monedas isuficientes */
@@ -248,7 +248,7 @@ function ruleta(costo){
             document.getElementById('dobla').innerHTML = 'DOBLA';
             
             puntos = puntos - costo;
-            numAzar(puntos,costo);
+            numAzar(costo);
                    
             return visibleGiro
         }
