@@ -8,69 +8,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>Jackpot 2.1</title>
+    <title>Jackpot 3.1</title>
 </head>
 <body>
-   <div class="row">
-        <div class="container mt-5 col-8 col-md-8 col-sm-8" >
-            
-            <div class="botones" >
-                <div class="buttonDobla" >
-                    <button id="dobla" class="dobla">DOBLA</button>
+    <header>        
+        <div class="row">
+            <div class="container mt-5 mb-5 col-8 col-md-8 col-sm-8" >
+                
+                <div class="botones" >
+                    <div class="buttonDobla" >
+                        <button id="dobla" class="dobla">DOBLA</button>
+                    </div>
+                    <div class="titulo">J<span class="a">🍒</span>ckp<span class="o" >🥝</span>t</div>
+                    <div class="buttonStart" >
+                        <button id="start" class="start">START</button>
+                    </div>
                 </div>
-                <h1>J<span class="a">🍒</span>ckp<span class="o" >🥝</span>t</h1>
-                <div class="buttonStart" >
-                    <button id="start" class="start">START</button>
-                </div>
-            </div>
-            <div id="jugada">
-                    <ul id="ventJugada" class="look1">
-                        <i id="primFrutRule">🍒</i>
-                        <i id="primFrutRule">🍓</i>
-                        <i id="primFrutRule">🍍</i>
-                        <i id="primFrutRule">🥝</i> 
-                        <i id="primFrutRule">🍉</i>
-                    </ul>
-                    <ul id="ventJugada" class="look2">
-                        <i id="segunFrutRule">🥝</i>
-                        <i id="segunFrutRule">🍉</i>
-                        <i id="segunFrutRule">🍒</i>
-                        <i id="segunFrutRule">🍍</i>
-                        <i id="segunFrutRule">🍓</i>
-                    </ul>
-                    <ul id="ventJugada" class="look3">
-                        <i id="terceFrutRule">🍍</i>
-                        <i id="terceFrutRule">🥝</i>
-                        <i id="terceFrutRule">🍓</i>
-                        <i id="terceFrutRule">🍉</i>
-                        <i id="terceFrutRule">🍒</i>
-                    </ul>
-                    <ul id="ventPremio" class="look4">
-                        <i id="primFrut">🍒</i>
-                        <i id="segunFrut">🍒</i>
-                        <i id="terceFrut">🍒</i>
+                <div id="jugada">
+                        <ul id="ventJugada" class="look1">
+                            <i id="primFrutRule">🍒</i>
+                            <i id="primFrutRule">🍓</i>
+                            <i id="primFrutRule">🍍</i>
+                            <i id="primFrutRule">🥝</i> 
+                            <i id="primFrutRule">🍉</i>
                         </ul>
-            </div>     
-            <div class="marcador">
-                <div class="puntuacion">
-                    <h3>Tienes</h3>
-                    <span id="puntos">15</span>
-                    <h3>Monedas 💰</h3>
+                        <ul id="ventJugada" class="look2">
+                            <i id="segunFrutRule">🥝</i>
+                            <i id="segunFrutRule">🍉</i>
+                            <i id="segunFrutRule">🍒</i>
+                            <i id="segunFrutRule">🍍</i>
+                            <i id="segunFrutRule">🍓</i>
+                        </ul>
+                        <ul id="ventJugada" class="look3">
+                            <i id="terceFrutRule">🍍</i>
+                            <i id="terceFrutRule">🥝</i>
+                            <i id="terceFrutRule">🍓</i>
+                            <i id="terceFrutRule">🍉</i>
+                            <i id="terceFrutRule">🍒</i>
+                        </ul>
+                        <ul id="ventPremio" class="look4">
+                            <i id="primFrut">🍒</i>
+                            <i id="segunFrut">🍒</i>
+                            <i id="terceFrut">🍒</i>
+                            </ul>
+                </div>     
+                <div class="marcador">
+                    <div class="puntuacion">
+                        <h3>Tienes</h3>
+                        <span id="puntos">15</span>
+                        <h3>Monedas 💰</h3>
+                    </div>
+                    <div class="combinaciones">
+                        <h3>Combinaciones Ganadoras</h3>
+                        <li>🍒🍒🍒 --  2  💰</li>
+                        <li>🍓🍓🍓 --  5  💰</li>
+                        <li>🍍🍍🍍 --  10 💰</li>
+                        <li>🥝🥝🥝 --  20 💰</li>
+                        <li>🍉🍉🍉 --  30 💰</li>
+                    </div>
                 </div>
-                <div class="combinaciones">
-                    <h3>Combinaciones Ganadoras</h3>
-                    <li>🍒🍒🍒 --  2  💰</li>
-                    <li>🍓🍓🍓 --  5  💰</li>
-                    <li>🍍🍍🍍 --  10 💰</li>
-                    <li>🥝🥝🥝 --  20 💰</li>
-                    <li>🍉🍉🍉 --  30 💰</li>
+                <div class="mensaje" >
+                    <h3 id="mensajeBanner"></h3>
                 </div>
-            </div>
-            <div class="mensaje" >
-                <h3 id="mensajeBanner"></h3>
             </div>
         </div>
-    </div>
+    </header>
 </body>
 <script src="main.js"></script>
 </html>

@@ -6,13 +6,21 @@
     --rojo : rgb(178, 15, 15);
     --amarillo : rgb(243, 227, 9);
     --amarillo-claro : rgb(230, 255, 6);
+    --naranja : rgb(202, 139, 23);
 }
-body {
-    background-color: var(--gris-oscuro)}
 
-h1 {
+header {
+    opacity: 1; 
+    background-image: url(./imagenes/casinos-online-tragaperras.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.titulo {
     padding: 20px;
-    font-size: 80px;
+    font-size: 80px; 
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -25,10 +33,7 @@ h1 {
 
 .container {
     position: relative;
-    background-color: var(--gris);
-    width:900px;
-    max-width: 80%;
-    margin: auto;
+    background-color: var(--naranja);
     text-align: center;
     border-radius: 40px;
 }
@@ -166,6 +171,7 @@ h1 {
 }
 
 .puntuacion h3 {
+    margin-top: 15px;
     font-size: 20px;
     color: var(--blanco);
 }
@@ -186,7 +192,6 @@ h1 {
     color: var(--blanco);
     font-size: 20px;
     margin-bottom: 7px;
-    margin-top: 7px;
 }
 
 .combinaciones li {
